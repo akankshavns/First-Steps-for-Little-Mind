@@ -1,10 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@inject IConfiguration Config
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <base href="/" />
+    <base href="@(Config.GetValue<string>("AppBasePath"))" />
     <link rel="stylesheet" href="_content/First_step_For_little_mind.Shared/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="_content/First_step_For_little_mind.Shared/app.css" />
     <link rel="stylesheet" href="First_step_For_little_mind.Web.styles.css" />
