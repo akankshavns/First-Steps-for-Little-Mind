@@ -1,4 +1,13 @@
-﻿.FSLM-BG {
+﻿
+.container-fluid {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins',sans-serif;
+}
+.FSLM-BG {
     height: 100vh;
     width: 100vw;
     background: url("Bg/SubjectTemp.jpg");
@@ -7,9 +16,14 @@
     
 }
 
+.pagename{
+    display:none;S
+}
+
 .cardContainer {
     display: flex;
     justify-content: center;
+   
 }
 
 .card-hover:hover {
@@ -36,6 +50,7 @@
 .container {
     display:flex;
     justify-content:center;
+    align-items:center;
 }
 
 .box {
@@ -58,4 +73,29 @@ a {
     width:20px;
     border-radius:50px;
     background-color:black;
+}
+
+
+@media (max-width: 768px){
+    .FSLM-BG {
+        overflow: scroll;
+        background:none;
+
+    }
+    .box{
+        display:none;
+    }
+
+    .cardContainer {
+        flex-direction: column;
+    }
+    .pagename {
+        display: block;
+        text-align:center;
+        color:red;
+        font-size:20px;
+        font-weight:bold;
+        padding-top:10px;
+
+    }
 }
